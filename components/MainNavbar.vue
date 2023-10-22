@@ -1,19 +1,25 @@
 <template>
-  <nav class='dark:bg-zinc-900 bg-zinc-200 w-full py-3'>
-    <div class='w-full px-4 flex justify-between mx-auto'>
-    <div class='logo flex gap-3 items-center'>
-    <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='text-cyan-400 h-6 w-6'><path stroke-linecap='round' stroke-linejoin='round' d='M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z' /></svg>
-    <div class='dark:text-white font-bold text-lg'>boltwind</div>
-    </div>
-    <div class='flex items-center gap-2'>
-    <a href='#' class='dark:text-zinc-300 rounded px-3 py-1 text-sm'>Home</a>
-    <a href='#' class='dark:text-zinc-300 rounded px-3 py-1 text-sm'>About</a>
-    <a href='#' class='dark:text-zinc-300 rounded px-3 py-1 text-sm'>Services</a>
-    <a href='#' class='dark:text-zinc-300 rounded px-3 py-1 text-sm'>Pricing</a>
-    <a href='#' class='dark:text-zinc-300 rounded px-3 py-1 text-sm'>Contact</a>
-    </div>
+  <nav class='bg-white w-full py-2 border-b border-gray-200'>
+    <div class='px-4 flex justify-between max-w-5xl w-full mx-auto'>
+      <div class='logo flex gap-3 items-center'>
+        <img src="/images/logo.jpeg" alt="cainaqua-logo" class="h-14 w-full object-contain" />
+      </div>
+      <div class='flex items-center gap-2 text-zinc-900'>
+        <NuxtLink to="/" class='rounded px-3 py-1 text-sm'>Home</NuxtLink>
+        <NuxtLink to="/about" class='rounded px-3 py-1 text-sm'>About</NuxtLink>
+        <a href='#' class='rounded px-3 py-1 text-sm'>Products</a>
+        <NuxtLink to="/contact" class='rounded px-3 py-1 text-sm'>Contact</NuxtLink>
+      </div>
     </div>
   </nav>
+  <!-- quick nav links -->
+  <div class="flex items-center gap-10 justify-center text-sm bg-gray-800  text-gray-100 font-semibold py-2">
+      <NuxtLink to="/" class="">Alkaline RO Purifier</NuxtLink>
+      <NuxtLink to="/">Hot & Cold RO</NuxtLink>
+      <NuxtLink to="/">Softener</NuxtLink>
+      <NuxtLink to="/">Ionizer</NuxtLink>
+      <NuxtLink to="/">Kitchen Appliance</NuxtLink>
+    </div>
 </template>
 
 <script setup>
