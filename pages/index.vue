@@ -1,8 +1,8 @@
 <template>
     <div class='flex flex-col w-full items-center shadow bg-white'>
         <!-- hero area -->
-        <div class="hero-area w-full">
-            <img src="/images/banner-bg.jpg">
+        <div class="hero-area w-full h-[82vh]">
+            <img src="/images/banner-bg.png" class="h-full w-full object-cover">
         </div>
 
          <!-- Best Selling Product -->
